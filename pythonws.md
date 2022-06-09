@@ -1,21 +1,35 @@
+# https://datavkngs.github.io/pythonws
+# 0. Setup your environment
+
+*Windows users*\
+[Programming Python with VSCode](https://code.visualstudio.com/docs/python)
+- Install VSCode
+- Install the Python extension
+- Create a Python virtual environment in the command line ```python -m venv .venv ```
+- Wait for the prompt and activate your virtual environment
+- Open a new terminal
+
+
 # 1. Create a python package
 
 [A Practical Guide to Using Setup.py](https://godatadriven.com/blog/a-practical-guide-to-using-setup-py/)
 
 *Commands*
 ```markdown
-python -m venv .venv
-source .venv/..
+# Create 2 new files
 touch README.md
 touch .gitignore
+# Create 1 new directory
 mkdir src
 cd src
 mkdir exampleproject
+# Edit these files
 vim setup.py
 vim requirements.txt
 cd exampleproject
 touch __init__.py
 touch example.py
+# Install the package
 pip install -e .
 ```
 *Example setup.py*
@@ -63,6 +77,7 @@ pylint /src
 pip install black
 black /src
 ```
+Tip! Use Google style docstrings [Example Google style docstrings](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
 
 # 3. Check type consistency
 
