@@ -61,8 +61,6 @@ black==22.3.0
 mypy==0.960
 pylint==2.13.9
 pytest==7.1.2
-pandas==0.23.3
-numpy>=1.14.5
 ```
 
 # 2. Python style guide and code formatting
